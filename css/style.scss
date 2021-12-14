@@ -1,0 +1,91 @@
+$color-principal: #72A603;
+$color-secundario: #154001;
+$color-blanco: #fff;
+$color-gris-claro: #ededed;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.color-white {
+    color: $color-blanco;
+}
+
+.bar {
+    background-color: $color-secundario;
+}
+
+.color-subtitle {
+    color: $color-principal;
+}
+
+.bg-icon {
+    background: $color-principal;
+}
+
+.nav-bar {
+    background: $color-gris-claro;
+
+
+    .logo {
+        width: 80px;
+    }
+
+    .menu {
+
+        // background: red;
+        .list-menu {
+            ul {
+                list-style: none;
+
+                li {
+                    color: #262626;
+                    display: flex;
+
+                    a {
+                        // background: blue;
+                        width: 130px;
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        &:hover {
+                            background: rgb(244, 244, 244);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+    .contadores_principal {
+        background: $color-principal;
+        // // background: #ebebeb;
+        display: flex;
+        justify-content: center;
+    
+        .contador {
+            text-align: center;
+    
+            .contador_cantidad {
+                font-weight: 600;
+                color: $color-blanco;
+                font-size: 26px;
+            }
+    
+            h4 {
+                color: $color-principal;
+            }
+        }
+    }

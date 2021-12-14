@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.bar {
+  background-color: #154001;
+}
+
+.color-subtitle {
+  color: #72A603;
+}
+
+.bg-icon {
+  background: #72A603;
+}
+
+.nav-bar {
+  background: #ededed;
+}
+
+.nav-bar .logo {
+  width: 80px;
+}
+
+.nav-bar .menu .list-menu ul {
+  list-style: none;
+}
+
+.nav-bar .menu .list-menu ul li {
+  color: #262626;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-bar .menu .list-menu ul li a {
+  width: 130px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-bar .menu .list-menu ul li a:hover {
+  background: #f4f4f4;
+}
+
+.contadores_principal {
+  background: #72A603;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contadores_principal .contador {
+  text-align: center;
+}
+
+.contadores_principal .contador .contador_cantidad {
+  font-weight: 600;
+  color: #fff;
+  font-size: 26px;
+}
+
+.contadores_principal .contador h4 {
+  color: #72A603;
+}
+/*# sourceMappingURL=style.css.map */
