@@ -40,6 +40,10 @@ img {
   height: auto;
 }
 
+.text-justify {
+  text-align: justify !important;
+}
+
 .logo {
   width: 150px;
 }
