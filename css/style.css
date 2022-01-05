@@ -1,9 +1,38 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #63af27;
+}
+
+.color-white {
+  color: #f9f9f9;
+}
+
+.color-black {
+  color: #121212;
+}
+
+.bg-black {
+  background-color: #121212;
+}
+
+.bg-icon {
+  background-color: #93c94a;
+}
+
+p {
+  color: #121212;
 }
 
 img {
@@ -11,80 +40,132 @@ img {
   height: auto;
 }
 
-.color-white {
-  color: #fff;
+.logo {
+  width: 150px;
 }
 
-.bar {
-  background-color: #154001;
+.color-icon {
+  color: #93c94a !important;
 }
 
-.color-subtitle {
-  color: #72A603;
+.carousel-control-next, .carousel-control-prev {
+  z-index: 99 !important;
 }
 
-.bg-icon {
-  background: #72A603;
+header {
+  z-index: 99;
+  width: 100%;
+  overflow: hidden;
 }
 
-.nav-bar {
-  background: #ededed;
+header .list-menu ul li a {
+  display: inline-block;
+  position: relative;
+  color: #f9f9f9;
 }
 
-.nav-bar .logo {
-  width: 80px;
+header .list-menu ul li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #63af27;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
-.nav-bar .menu .list-menu ul {
-  list-style: none;
+header .list-menu ul li a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
-.nav-bar .menu .list-menu ul li {
-  color: #262626;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nav-bar .menu .list-menu ul li a {
-  width: 130px;
-  height: 100px;
+.redes-sociales {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.nav-bar .menu .list-menu ul li a:hover {
-  background: #f4f4f4;
+.carousel-bg {
+  height: 600px !important;
 }
 
-.contadores_principal {
-  background: #72A603;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.carousel-bg:nth-child(1) {
+  background-image: url(../img/banner-1.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
-.contadores_principal .contador {
-  text-align: center;
+.carousel-bg:nth-child(1)::after {
+  content: "";
+  background: #121212;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: .7;
 }
 
-.contadores_principal .contador .contador_cantidad {
-  font-weight: 600;
-  color: #fff;
-  font-size: 26px;
+.carousel-bg:nth-child(2) {
+  background-image: url(../img/banner-2.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
-.contadores_principal .contador h4 {
-  color: #72A603;
+.carousel-bg:nth-child(2)::after {
+  content: "";
+  background: #121212;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: .7;
+}
+
+.carousel-bg:nth-child(3) {
+  background-image: url(../img/banner-3.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-bg:nth-child(3)::after {
+  content: "";
+  background: #121212;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: .7;
+}
+
+.text-banner {
+  z-index: 99 !important;
+}
+
+main {
+  overflow: hidden;
+}
+
+main .bg-section {
+  background-image: url(../img/bg-banner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .bg-banner-2 {
+  background-image: url(../img/bg-banner-2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
