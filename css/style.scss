@@ -172,3 +172,16 @@ main {
         background-size: cover;
     }
 }
+
+@media (max-width:600px) {
+        header{
+            display: none;
+        }
+
+        .text-sm-center{
+            text-align: center;
+        }
+        .icon-sm-center{
+            justify-content: center ;
+        }
+}

@@ -168,4 +168,18 @@ main .bg-banner-2 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (max-width: 600px) {
+  header {
+    display: none;
+  }
+  .text-sm-center {
+    text-align: center;
+  }
+  .icon-sm-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
