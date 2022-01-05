@@ -45,9 +45,11 @@ img {
     width: 100%;
     height: auto;
 }
+
 .text-justify{
     text-align: justify!important; 
 }
+
 .logo {
     width: 150px;
 }
@@ -174,7 +176,7 @@ main {
 
     .bg-section {
         // background: $color-negro;
-        background-image: url(../img/bg-banner.jpg);
+        background-image: url(../img/bg-banner-2.png);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -182,10 +184,14 @@ main {
 
     .bg-banner-2 {
         // background: $color-negro;
-        background-image: url(../img/bg-banner-2.png);
+        background-image: url(../img/bg-banner.jpg);
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
+        background-attachment: fixed;
+        height: 480px;
+        align-items: center;
+        display: flex;
     }
 }
 
@@ -267,4 +273,5 @@ main {
 
     }
 }
+
 

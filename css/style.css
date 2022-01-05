@@ -174,17 +174,25 @@ main {
 }
 
 main .bg-section {
-  background-image: url(../img/bg-banner.jpg);
+  background-image: url(../img/bg-banner-2.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 main .bg-banner-2 {
-  background-image: url(../img/bg-banner-2.png);
+  background-image: url(../img/bg-banner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-attachment: fixed;
+  height: 480px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 600px) {
