@@ -207,6 +207,9 @@ main .bg-banner-2 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .bg-banner-2 {
+    background-size: cover;
+  }
 }
 
 .menu-movil {
