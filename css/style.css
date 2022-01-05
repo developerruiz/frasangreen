@@ -174,17 +174,25 @@ main {
 }
 
 main .bg-section {
-  background-image: url(../img/bg-banner.jpg);
+  background-image: url(../img/bg-banner-2.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 main .bg-banner-2 {
-  background-image: url(../img/bg-banner-2.png);
+  background-image: url(../img/bg-banner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-attachment: fixed;
+  height: 480px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 600px) {
@@ -199,5 +207,71 @@ main .bg-banner-2 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.menu-movil {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* fallback for old browsers */
+  background: #63af27;
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  position: fixed;
+  -webkit-clip-path: circle(0% at 0 0);
+          clip-path: circle(0% at 0 0);
+  text-align: center;
+}
+
+.menu-movil ul a {
+  text-decoration: none;
+}
+
+.menu-movil ul a li {
+  color: #f9f9f9;
+  margin: 30px 0;
+  list-style: none;
+  font-size: 28px;
+  font-weight: 700;
+  transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+}
+
+.menu-movil ul a li:hover {
+  transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  color: #c66a2b;
+}
+
+.menu-movil ul a.inactivo-temporal {
+  color: #3f3f3f;
+  cursor: context-menu;
+}
+
+.menu-movil.active {
+  -webkit-clip-path: circle(150% at 0 0);
+          clip-path: circle(150% at 0 0);
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
 }
 /*# sourceMappingURL=style.css.map */
