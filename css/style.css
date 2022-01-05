@@ -56,15 +56,16 @@ header {
   z-index: 99;
   width: 100%;
   overflow: hidden;
+  z-index: 999;
 }
 
-header .list-menu ul li a {
+header .list-menu .list li .item-menu {
   display: inline-block;
   position: relative;
   color: #f9f9f9;
 }
 
-header .list-menu ul li a:after {
+header .list-menu .list li .item-menu:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -82,11 +83,24 @@ header .list-menu ul li a:after {
   transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
-header .list-menu ul li a:hover:after {
+header .list-menu .list li .item-menu:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
+}
+
+.btn-contacto {
+  border: 1px solid #63af27;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+.btn-contacto:hover {
+  background-color: #349319 !important;
+  color: #f9f9f9;
 }
 
 .redes-sociales {
@@ -103,7 +117,7 @@ header .list-menu ul li a:hover:after {
 }
 
 .carousel-bg:nth-child(1) {
-  background-image: url(../img/banner-1.jpg);
+  background-image: url(../img/banner-4.jpeg);
   background-size: cover;
   background-position: center center;
 }
@@ -118,7 +132,7 @@ header .list-menu ul li a:hover:after {
 }
 
 .carousel-bg:nth-child(2) {
-  background-image: url(../img/banner-2.jpg);
+  background-image: url(../img/banner-5.jpeg);
   background-size: cover;
   background-position: center center;
 }
@@ -133,7 +147,7 @@ header .list-menu ul li a:hover:after {
 }
 
 .carousel-bg:nth-child(3) {
-  background-image: url(../img/banner-3.jpg);
+  background-image: url(../img/banner-7.jpeg);
   background-size: cover;
   background-position: center center;
 }

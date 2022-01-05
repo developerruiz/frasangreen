@@ -62,17 +62,18 @@ header {
     z-index: 99;
     width: 100%;
     overflow: hidden;
+    z-index: 999;
 
     .list-menu {
-        ul {
+        .list {
             li {
-                a {
+                .item-menu {
                     display: inline-block;
                     position: relative;
                     color: $color-blanco;
                 }
 
-                a:after {
+                .item-menu:after {
                     content: '';
                     position: absolute;
                     width: 100%;
@@ -85,7 +86,7 @@ header {
                     transition: transform 0.25s ease-out;
                 }
 
-                a:hover:after {
+                .item-menu:hover:after {
                     transform: scaleX(1);
                     transform-origin: bottom left;
                 }
@@ -93,6 +94,19 @@ header {
         }
     }
 }
+.btn-contacto{
+    border: 1px  solid $color-principal;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: $color-blanco;
+    text-decoration: none;
+
+    &:hover{
+        background-color: $color-secundario!important; 
+        color: $color-blanco;
+    }
+}
+
 
 .redes-sociales {
     display: flex;
@@ -103,7 +117,7 @@ header {
     height: 600px !important;
 
     &:nth-child(1) {
-        background-image: url(../img/banner-1.jpg);
+        background-image: url(../img/banner-4.jpeg);
         background-size: cover;
         background-position: center center;
 
@@ -118,7 +132,7 @@ header {
     }
 
     &:nth-child(2) {
-        background-image: url(../img/banner-2.jpg);
+        background-image: url(../img/banner-5.jpeg);
         background-size: cover;
         background-position: center center;
 
@@ -133,7 +147,7 @@ header {
     }
 
     &:nth-child(3) {
-        background-image: url(../img/banner-3.jpg);
+        background-image: url(../img/banner-7.jpeg);
         background-size: cover;
         background-position: center center;
 
@@ -172,6 +186,7 @@ main {
         background-size: cover;
     }
 }
+
 
 @media (max-width:600px) {
         header{
