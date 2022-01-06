@@ -29,6 +29,9 @@ h6 {
     color: $color-negro;
 }
 
+.color-s {
+    color: $color-secundario;
+}
 .bg-black {
     background-color: $color-negro;
 }
@@ -97,6 +100,74 @@ header {
             }
         }
     }
+
+
+    .menu-bar-movil {
+        
+        // background: $color-blanco;
+        width: 100%;
+        position: fixed;
+        z-index: 99999!important;
+        top: 0;
+        padding: 0 2.25rem;
+        display: none;
+        
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 5.875rem;
+        
+    
+        .logo-menu-movil{
+            width: 6rem;
+        }
+    
+        .burger-menu {
+            cursor: pointer;
+            font-size: 2.1875rem;
+            
+    
+        }
+    
+        .slideMenu {
+            position: fixed;
+            height: 100%;
+            top: 0;
+            left: -80%;
+            background: $color-blanco;
+            text-align: left;
+            // padding: 1.25rem 2.25rem;
+            width: 80%;
+            -webkit-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+    
+            &.active {
+                left: 0;
+            }
+    
+            .top-redes {
+                margin-bottom: 0.625rem;
+    
+                a {
+                    padding: 0 0.5625rem;
+                }
+            }
+    
+            .menu-principal {
+                a {
+                    display: block;
+                    padding: 0.625rem 1rem;
+                    
+                    // border-top: 1px solid #e1e1e1;
+                    &:hover{
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+
 }
 .btn-contacto{
     border: 1px  solid $color-principal;
@@ -168,14 +239,14 @@ header {
 
 .text-banner {
     z-index: 99 !important;
-    // background: $color-negro;
+    
 }
 
 main {
     overflow: hidden;
 
     .bg-section {
-        // background: $color-negro;
+        
         background-image: url(../img/bg-banner-2.png);
         background-position: center center;
         background-repeat: no-repeat;
@@ -183,7 +254,7 @@ main {
     }
 
     .bg-banner-2 {
-        // background: $color-negro;
+        
         background-image: url(../img/bg-banner.jpg);
         background-position: center center;
         background-repeat: no-repeat;
@@ -197,9 +268,6 @@ main {
 
 
 @media (max-width:600px) {
-        header{
-            display: none;
-        }
 
         .text-sm-center{
             text-align: center;
@@ -207,77 +275,17 @@ main {
         .icon-sm-center{
             justify-content: center ;
         }
-
         .bg-banner-2 {
-            
-            background-size: cover;
-            
+            background-size: cover!important;
+        }
+        .navbar{
+            display: none!important;
+        }
+        .bar-menu{
+            display: none!important;
+        }
+        .menu-bar-movil {
+            display: flex!important;
         }
 }
-
-
-.menu-movil {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-
-    /* fallback for old browsers */
-    background: $color-principal;
-    /* Chrome 10-25, Safari 5.1-6 */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    z-index: 9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition: all .3s ease-in;
-    -webkit-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-    position: fixed;
-    clip-path: circle(0.0% at 0 0);
-    text-align: center;
-
-    ul {
-
-        a {
-            text-decoration: none;
-
-            li {
-                color: $color-blanco;
-                margin: 30px 0;
-                list-style: none;
-                font-size: 28px;
-                font-weight: 700;
-                transition: all .1s ease-in;
-                -webkit-transition: all .1s ease-in;
-                -o-transition: all .1s ease-in;
-
-                &:hover {
-                    transition: all .1s ease-in;
-                    -webkit-transition: all .1s ease-in;
-                    -o-transition: all .1s ease-in;
-                    color: #c66a2b;
-                }
-
-            }
-
-
-            &.inactivo-temporal {
-                color: #3f3f3f;
-                cursor: context-menu;
-            }
-        }
-
-
-    }
-
-    &.active {
-        clip-path: circle(150% at 0 0);
-        transition: all .3s ease-in;
-        -webkit-transition: all .3s ease-in;
-        -o-transition: all .3s ease-in;
-
-    }
-}
-
 

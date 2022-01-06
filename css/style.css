@@ -23,6 +23,10 @@ h6 {
   color: #121212;
 }
 
+.color-s {
+  color: #349319;
+}
+
 .bg-black {
   background-color: #121212;
 }
@@ -92,6 +96,64 @@ header .list-menu .list li .item-menu:hover:after {
           transform: scaleX(1);
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
+}
+
+header .menu-bar-movil {
+  width: 100%;
+  position: fixed;
+  z-index: 99999 !important;
+  top: 0;
+  padding: 0 2.25rem;
+  display: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 5.875rem;
+}
+
+header .menu-bar-movil .logo-menu-movil {
+  width: 6rem;
+}
+
+header .menu-bar-movil .burger-menu {
+  cursor: pointer;
+  font-size: 2.1875rem;
+}
+
+header .menu-bar-movil .slideMenu {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: -80%;
+  background: #f9f9f9;
+  text-align: left;
+  width: 80%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+header .menu-bar-movil .slideMenu.active {
+  left: 0;
+}
+
+header .menu-bar-movil .slideMenu .top-redes {
+  margin-bottom: 0.625rem;
+}
+
+header .menu-bar-movil .slideMenu .top-redes a {
+  padding: 0 0.5625rem;
+}
+
+header .menu-bar-movil .slideMenu .menu-principal a {
+  display: block;
+  padding: 0.625rem 1rem;
+}
+
+header .menu-bar-movil .slideMenu .menu-principal a:hover {
+  background: #fff;
 }
 
 .btn-contacto {
@@ -196,9 +258,6 @@ main .bg-banner-2 {
 }
 
 @media (max-width: 600px) {
-  header {
-    display: none;
-  }
   .text-sm-center {
     text-align: center;
   }
@@ -208,73 +267,18 @@ main .bg-banner-2 {
             justify-content: center;
   }
   .bg-banner-2 {
-    background-size: cover;
+    background-size: cover !important;
   }
-}
-
-.menu-movil {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  /* fallback for old browsers */
-  background: #63af27;
-  /* Chrome 10-25, Safari 5.1-6 */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  z-index: 9;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  transition: all .3s ease-in;
-  -webkit-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  position: fixed;
-  -webkit-clip-path: circle(0% at 0 0);
-          clip-path: circle(0% at 0 0);
-  text-align: center;
-}
-
-.menu-movil ul a {
-  text-decoration: none;
-}
-
-.menu-movil ul a li {
-  color: #f9f9f9;
-  margin: 30px 0;
-  list-style: none;
-  font-size: 28px;
-  font-weight: 700;
-  transition: all .1s ease-in;
-  -webkit-transition: all .1s ease-in;
-  -o-transition: all .1s ease-in;
-}
-
-.menu-movil ul a li:hover {
-  transition: all .1s ease-in;
-  -webkit-transition: all .1s ease-in;
-  -o-transition: all .1s ease-in;
-  color: #c66a2b;
-}
-
-.menu-movil ul a.inactivo-temporal {
-  color: #3f3f3f;
-  cursor: context-menu;
-}
-
-.menu-movil.active {
-  -webkit-clip-path: circle(150% at 0 0);
-          clip-path: circle(150% at 0 0);
-  transition: all .3s ease-in;
-  -webkit-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
+  .navbar {
+    display: none !important;
+  }
+  .bar-menu {
+    display: none !important;
+  }
+  .menu-bar-movil {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
