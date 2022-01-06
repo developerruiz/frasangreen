@@ -32,6 +32,11 @@ h6 {
 .color-s {
     color: $color-secundario;
 }
+
+.color-c{
+    color: $color-complemetario;
+}
+
 .bg-black {
     background-color: $color-negro;
 }
@@ -49,8 +54,8 @@ img {
     height: auto;
 }
 
-.text-justify{
-    text-align: justify!important; 
+.text-justify {
+    text-align: justify !important;
 }
 
 .logo {
@@ -60,8 +65,10 @@ img {
 .color-icon {
     color: $color-icon !important;
 }
-.carousel-control-next, .carousel-control-prev{
-    z-index: 99!important;
+
+.carousel-control-next,
+.carousel-control-prev {
+    z-index: 99 !important;
 }
 
 header {
@@ -103,30 +110,30 @@ header {
 
 
     .menu-bar-movil {
-        
+
         // background: $color-blanco;
         width: 100%;
         position: fixed;
-        z-index: 99999!important;
+        z-index: 99999 !important;
         top: 0;
         padding: 0 1.5rem;
         display: none;
-        
+
         justify-content: flex-end;
         align-items: center;
         min-height: 5.875rem;
-        
-        
-        .logo-menu-movil{
+
+
+        .logo-menu-movil {
             width: 6rem;
         }
-    
+
         .burger-menu {
             cursor: pointer;
             font-size: 2.1875rem;
 
         }
-    
+
         .slideMenu {
             position: fixed;
             height: 100%;
@@ -139,26 +146,26 @@ header {
             -webkit-transition: all .3s ease;
             -o-transition: all .3s ease;
             transition: all .3s ease;
-    
+
             &.active {
                 left: 0;
             }
-    
+
             .top-redes {
                 margin-bottom: 0.625rem;
-    
+
                 a {
                     padding: 0 0.5625rem;
                 }
             }
-    
+
             .menu-principal {
                 a {
                     display: block;
                     padding: 0.625rem 1rem;
-                    
+
                     // border-top: 1px solid #e1e1e1;
-                    &:hover{
+                    &:hover {
                         background: #fff;
                     }
                 }
@@ -168,15 +175,16 @@ header {
 
 
 }
-.btn-contacto{
-    border: 1px  solid $color-principal;
+
+.btn-contacto {
+    border: 1px solid $color-principal;
     padding: 10px 20px;
     border-radius: 10px;
     color: $color-blanco;
     text-decoration: none;
 
-    &:hover{
-        background-color: $color-secundario!important; 
+    &:hover {
+        background-color: $color-secundario !important;
         color: $color-blanco;
     }
 }
@@ -191,7 +199,7 @@ header {
     height: 600px !important;
 
     &:nth-child(1) {
-        background-image: url(../img/banner-4.jpeg);
+        background-image: url(../img/banner-1.jpg);
         background-size: cover;
         background-position: center center;
 
@@ -206,7 +214,8 @@ header {
     }
 
     &:nth-child(2) {
-        background-image: url(../img/banner-5.jpeg);
+      
+        background-image: url(../img/banner-7.jpeg);
         background-size: cover;
         background-position: center center;
 
@@ -221,7 +230,38 @@ header {
     }
 
     &:nth-child(3) {
-        background-image: url(../img/banner-7.jpeg);
+      
+        background-image: url(../img/banner-4.jpeg);
+        background-size: cover;
+        background-position: center center;
+
+        &::after {
+            content: "";
+            background: $color-negro;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: .7;
+        }
+    }
+    &:nth-child(4) {
+      
+        background-image: url(../img/banner-8.jpeg);
+        background-size: cover;
+        background-position: center center;
+
+        &::after {
+            content: "";
+            background: $color-negro;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: .7;
+        }
+    }
+    &:nth-child(5) {
+      
+        background-image: url(../img/banner-9.jpeg);
         background-size: cover;
         background-position: center center;
 
@@ -238,14 +278,14 @@ header {
 
 .text-banner {
     z-index: 99 !important;
-    
+
 }
 
 main {
     overflow: hidden;
 
     .bg-section {
-        
+
         background-image: url(../img/bg-banner-2.png);
         background-position: center center;
         background-repeat: no-repeat;
@@ -253,7 +293,7 @@ main {
     }
 
     .bg-banner-2 {
-        
+
         background-image: url(../img/bg-banner.jpg);
         background-position: center center;
         background-repeat: no-repeat;
@@ -268,24 +308,29 @@ main {
 
 @media (max-width:600px) {
 
-        .text-sm-center{
-            text-align: center;
-        }
-        .icon-sm-center{
-            justify-content: center ;
-        }
-        .bg-banner-2 {
-            background-size: cover!important;
-        }
-        .navbar{
-            display: none!important;
-        }
-        .bar-menu{
-            display: none!important;
-        }
-        .menu-bar-movil {
-            display: flex!important;
-        }
+    .text-sm-center {
+        text-align: center;
+    }
+
+    .icon-sm-center {
+        justify-content: center;
+    }
+
+    .bg-banner-2 {
+        background-size: cover !important;
+    }
+
+    .navbar {
+        display: none !important;
+    }
+
+    .bar-menu {
+        display: none !important;
+    }
+
+    .menu-bar-movil {
+        display: flex !important;
+    }
 }
 
 @keyframes aparecer {
@@ -308,4 +353,49 @@ main {
 
 .animar {
     animation: aparecer 1.3s;
+}
+
+
+
+// HOJAS ANIMACION
+
+.falling-leaves {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+
+    // transform: translate(-50%, 0);
+    
+    border-radius: 50px;
+    background: url() no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.leaf-scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform-style: preserve-3d;
+
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: url(https://toppng.com/public/uploads/thumbnail/hojas-en-png-dibujo-de-hoja-verde-11562899901itt0c8hg9g.png) no-repeat;
+        background-size: 100%;
+        transform-style: preserve-3d;
+        backface-visibility: visible;
+    }
+}
+.bg-silueta{
+    height: 550px;
+    background-size: contain;
+    background-position: bottom ;
+    background-repeat: no-repeat;
+    background-image: url(../img/silueta-green.png);
 }
