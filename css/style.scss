@@ -294,14 +294,15 @@ main {
 
     .bg-banner-2 {
 
-        background-image: url(../img/bg-banner.jpg);
+        background-image: url(../img/bg-banner2.jpg);
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-attachment: fixed;
         height: 480px;
         align-items: center;
         display: flex;
+        
     }
 }
 
@@ -330,6 +331,9 @@ main {
 
     .menu-bar-movil {
         display: flex !important;
+    }
+    .bg-silueta{
+        height: 600px!important;
     }
 }
 
