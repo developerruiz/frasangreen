@@ -20,4 +20,5 @@ Es recomendado, descargar el proyecto de Github para sus cambios y crear las ver
 ##### Recomedación
 Las imagenes se pasaron a formato [webp](https://es.wikipedia.org/wiki/WebP "webp"), para una mejor resolucion y peso en carga de la pagina web. 
 ##### Instalación de extenciones en Google 
+[<img src="https://lh3.googleusercontent.com/JsGtt7BHEbHhQl5OzJikROL49WGoN0fBNcU_mvLRjWqx7nm7r7rzdG0DpET4qcK1FhNkFpcKf600G-Eoxx-_q3D4iA=w128-h128-e365-rj-sc0x00ffffff" alt="lighthose extensión" width="80" />](https://lh3.googleusercontent.com/JsGtt7BHEbHhQl5OzJikROL49WGoN0fBNcU_mvLRjWqx7nm7r7rzdG0DpET4qcK1FhNkFpcKf600G-Eoxx-_q3D4iA=w128-h128-e365-rj-sc0x00ffffff) ,
 Con la extencion de Google, [lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=es "lighthouse"), para poder obtener una mejor calificacion y posicionamiento en google.
