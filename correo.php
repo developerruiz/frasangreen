@@ -1,6 +1,6 @@
 <?php
 
-$destinatario = 'contacto@frasangreen.com.mx';
+$destinatario = 'ivanrur95@gmail.com';
 
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];

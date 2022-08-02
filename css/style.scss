@@ -1,35 +1,102 @@
-$color-principal: #63af27;
-$color-secundario: #349319;
+$color-principal: #F79A02;
+$color-secundario: #24A4DE;
 $color-complemetario: #005b30;
-$color-icon: #93c94a;
+$color-icon: #F79A02;
 $color-negro: #121212;
 $color-blanco: #f9f9f9;
-
 
 * {
     margin: 0;
     padding: 0;
     font-size: 14px;
     box-sizing: border-box;
-    font-family: 'Heebo', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-principal;
+}
 
+section{
+    margin: 100px 0;
+  }
+.color-white {
+    color: $color-blanco;
+}
+
+.color-black {
+    color: $color-negro;
+}
+
+.color-s {
+    color: $color-secundario;
+}
+.bg-s {
+    background: $color-secundario!important;
+}
+
+.color-c {
+    color: $color-complemetario;
+}
+
+.bg-black {
+    background-color: $color-negro;
+}
+
+.bg-icon {
+    background-color: $color-icon;
+}
+
+p {
+    color: $color-negro;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.logo {
+    width: 150px;
+}
+
+.color-icon {
+    color: $color-icon !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    z-index: 99 !important;
+}
 
 header {
     // background: $color-blanco;
-    z-index: 99;
     width: 100%;
     overflow: hidden;
     z-index: 999;
+    position: fixed !important;
+
+    .bar-menu {
+        background: $color-secundario;
+    }
 
     .list-menu {
         .list {
+            align-items: center;
+
             li {
                 .item-menu {
                     display: inline-block;
                     position: relative;
-                    color: $color-blanco;
+                    color: $color-negro;
                 }
 
                 .item-menu:after {
@@ -49,6 +116,13 @@ header {
                     transform: scaleX(1);
                     transform-origin: bottom left;
                 }
+
+                .burger-menu {
+                    margin: 0 15px;
+                    cursor: pointer !important;
+                    font-size: 2.1875rem;
+
+                }
             }
         }
     }
@@ -59,10 +133,10 @@ header {
         // background: $color-blanco;
         width: 100%;
         position: fixed;
-        z-index: 99999 !important;
+        z-index: -1 !important;
         top: 0;
         padding: 0 1.5rem;
-        display: none;
+        display: flex;
 
         justify-content: flex-end;
         align-items: center;
@@ -73,16 +147,12 @@ header {
             width: 6rem;
         }
 
-        .burger-menu {
-            cursor: pointer;
-            font-size: 2.1875rem;
 
-        }
 
         .slideMenu {
             position: fixed;
             height: 100%;
-            top: 0;
+            top: 100px;
             left: -80%;
             background: $color-blanco;
             text-align: left;
@@ -111,14 +181,155 @@ header {
 
                     // border-top: 1px solid #e1e1e1;
                     &:hover {
-                        background: #fff;
+                        background: $color-principal;
                     }
                 }
             }
         }
     }
 
+    .navbar {
+        background: #f5f5f5;
 
+        li {
+            color: $color-negro;
+        }
+
+        height: 100px;
+    }
+}
+
+.btn-contacto {
+    border: 1px solid $color-principal;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: $color-blanco;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $color-secundario !important;
+        color: $color-blanco;
+    }
+}
+
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-bg {
+    margin-top: 100px;
+    height: 600px !important;
+
+    &:nth-child(1) {
+        background-image: url(../img/banner.jpg);
+        background-size: cover;
+        background-position: center center;
+
+        &::after {
+            content: "";
+            background: $color-negro;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: .7;
+        }
+    }
+
+    &:nth-child(2) {
+
+        background-image: url(../img/banner-2.webp);
+        background-size: cover;
+        background-position: center center;
+
+        &::after {
+            content: "";
+            background: $color-negro;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: .7;
+        }
+    }
+
+    &:nth-child(3) {
+
+        background-image: url(../img/banner-planta.jpg);
+        background-size: cover;
+        background-position: center center;
+
+        &::after {
+            content: "";
+            background: $color-negro;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: .7;
+        }
+    }
+
+    &:nth-child(4) {
+
+        background-image: url(../img/banner-4.webp);
+        background-size: cover;
+        background-position: center center;
+
+        &::after {
+            content: "";
+            background: $color-negro;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: .7;
+        }
+    }
+
+    &:nth-child(5) {
+
+        background-image: url(../img/banner-6.webp);
+        background-size: cover;
+        background-position: center center;
+
+        &::after {
+            content: "";
+            background: $color-negro;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: .7;
+        }
+    }
+}
+
+.text-banner {
+    z-index: 99 !important;
+
+}
+
+main {
+    overflow: hidden;
+
+    .bg-section {
+
+        background-image: url(../img/bg-banner-2.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bg-banner-2 {
+
+        background-image: url(../img/bg-banner2.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 480px;
+        align-items: center;
+        display: flex;
+
+    }
 }
 
 
@@ -127,7 +338,6 @@ header {
     .text-sm-center {
         text-align: center;
     }
-
 
     .icon-sm-center {
         justify-content: center;
@@ -138,19 +348,446 @@ header {
     }
 
     .navbar {
-        display: none !important;
-    }
-
-    .bar-menu {
-        display: none !important;
-    }
-
-    .menu-bar-movil {
         display: flex !important;
     }
+
+
 
     .bg-silueta {
         height: 600px !important;
     }
+}
+
+@keyframes aparecer {
+
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
 }
+
+.ocultar {
+    opacity: 0;
+}
+
+.animar {
+    animation: aparecer 1.3s;
+}
+
+
+
+// HOJAS ANIMACION
+
+.falling-leaves {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+
+    // transform: translate(-50%, 0);
+
+    border-radius: 50px;
+    background: url() no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.leaf-scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform-style: preserve-3d;
+
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: url(https://toppng.com/public/uploads/thumbnail/hojas-en-png-dibujo-de-hoja-verde-11562899901itt0c8hg9g.png) no-repeat;
+        background-size: 100%;
+        transform-style: preserve-3d;
+        backface-visibility: visible;
+    }
+}
+
+.bg-silueta {
+    height: 550px;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(../img/silueta-green.webp);
+}
+
+
+.ti_bg {
+    background-image: url(../img/ti_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+
+
+    }
+
+}
+
+.img_agencia{
+    width: 100%;
+    height: 250px;
+}
+
+.agencia_digital {
+    .col-lg-4.p-3 {
+
+
+        &:nth-child(1) {
+
+            .img_agencia {
+
+                background-image: url(../img/estrategia_360.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+
+
+                h4{
+                    z-index: 999!important;
+                    // color: #fff;
+                    color: $color-principal;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.6);
+                }
+                
+            }
+
+        }
+
+        &:nth-child(2) {
+            .img_agencia {
+
+                background-image: url(../img/marketing_digital.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+       
+                h4{
+                    z-index: 999!important;
+                    // color: #fff;
+                    color: $color-principal;
+                }
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.6);
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            .img_agencia {
+
+                background-image: url(../img/redes_sociales.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                h4{
+                    z-index: 999!important;
+                    // color: #fff;
+                    color: $color-principal;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.6);
+                    
+                }
+           
+            }
+
+        }
+
+    }
+
+}
+
+@media(max-width: 991px){
+
+    .img_agencia {
+
+        height: 250px !important;
+        // width: 100vw !important;
+   
+    }
+    .text-center-sm{
+        text-align: center!important;
+    }
+    .justify-content-center-sm{
+        justify-content: center!important;
+    }
+}
+
+/* VENTANA MODAL EMERGENTE */
+
+.modal-alerta {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+
+
+    .bg-repse{
+        width: 100%;height: 500px;
+        background-image: url(../img/img-repse.jpg);
+    }
+
+  }
+  
+  .cerrar-alerta {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+
+  .cerrar-modal {
+    background: #f79b00;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 95%;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffff;
+    cursor: pointer;
+  }
+  
+
+  .feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    font-size: 2rem!important;
+    color: #fff;
+    border-radius: 0.75rem;
+}
+
+
+/* CHAT */
+.chat {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 15px;
+    z-index: 99999;
+    width: 200px;
+    border-radius: 35px;
+    justify-content: space-around;
+    background: $color-principal;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $color-principal, $color-principal);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $color-principal, $color-principal);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 5px 12px 8px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+  
+  .chat span {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .chat div>i {
+    font-size: 40px;
+    color: #fff;
+  }
+  
+  /* CHATBOX */
+  .chat-box {
+    background: #f0f0f0;
+    display: none;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    z-index: 99999;
+    width: 400px;
+    height: 420px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+  }
+  
+  .chat-box.active {
+    display: block;
+  }
+  
+  .chat-box.min {
+    display: block;
+    height: 80px;
+  }
+  
+  .chat-box:nth-child(3) {
+    margin-bottom: -20;
+  }
+  
+  .barra-chatbox {
+  
+    width: 100%;
+    height: 80px;
+    background: $color-principal;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $color-principal, $color-principal);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $color-principal, $color-principal);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px 10px 0 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .contenedor-chatbox p,
+  span {
+    font-size: 20px;
+  }
+  
+  /* ICONOS */
+  .fa-user-circle {
+    color: #fff;
+    font-size: 50px;
+  }
+  
+  .fa-window-minimize {
+    color: #fff;
+    font-size: 25px;
+  }
+  
+  .fa-times {
+    color: #fff;
+    font-size: 25px;
+  }
+  
+  .fa-window-restore {
+    color: #fff;
+    font-size: 25px;
+  }
+  
+  .fa-arrow-left {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  /* FIN ICONOS */
+  .barra-chatbox div>span {
+    color: #fff;
+    font-size: 15px;
+  }
+  
+  .contenedor-chatbox {
+    margin: 20px;
+  }
+  
+  .pregunta {
+    background: $color-principal;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $color-principal, $color-principal);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $color-principal, $color-principal);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+  }
+  
+  .chat-box div:nth-last-child(1)>i {
+    cursor: pointer;
+  }
+  
+  .chat-box div:nth-last-child(2)>i {
+    cursor: pointer;
+  }
+  
+  .chat-box div:nth-last-child(3)>i {
+    cursor: pointer;
+  }
+  
+  /* FIN DE CHAT */
+  
+  
+  @media screen and (max-width:768px) {
+    .chat-box {
+      left: 0 !important;
+      width: 100%;
+    }
+  }
+
+  .whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:100px;
+    right:20px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top: 16px;
+  }
